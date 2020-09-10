@@ -1,0 +1,121 @@
+﻿@page
+@model Project_V17.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FSApp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.StaffFirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.StaffFirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.StaffSurname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.StaffSurname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Department)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Department)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Function)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Function)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.CourseName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.CourseName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Level)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Level)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Provider)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Provider)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Details)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Details)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.StartYear)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.StartYear)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Mode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Mode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Duration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Duration)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Cost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Cost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Q1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Q1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Q2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Q2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Q3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Q3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Q4)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Q4)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FSApp.Q5)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FSApp.Q5)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.FSApp.AppID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,115 @@
+﻿@page
+@model Project_V17.Pages.EditApplicationModel
+
+@{
+    ViewData["Title"] = "EditApplication";
+}
+
+<h2>EditApplication</h2>
+
+<h4>FSApp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="FSApp.AppID" />
+            <div class="form-group">
+                <label asp-for="FSApp.StaffFirstName" class="control-label"></label>
+                <input asp-for="FSApp.StaffFirstName" class="form-control" />
+                <span asp-validation-for="FSApp.StaffFirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.StaffSurname" class="control-label"></label>
+                <input asp-for="FSApp.StaffSurname" class="form-control" />
+                <span asp-validation-for="FSApp.StaffSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Department" class="control-label"></label>
+                <input asp-for="FSApp.Department" class="form-control" />
+                <span asp-validation-for="FSApp.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Function" class="control-label"></label>
+                <input asp-for="FSApp.Function" class="form-control" />
+                <span asp-validation-for="FSApp.Function" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.CourseName" class="control-label"></label>
+                <input asp-for="FSApp.CourseName" class="form-control" />
+                <span asp-validation-for="FSApp.CourseName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Level" class="control-label"></label>
+                <input asp-for="FSApp.Level" class="form-control" />
+                <span asp-validation-for="FSApp.Level" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Provider" class="control-label"></label>
+                <input asp-for="FSApp.Provider" class="form-control" />
+                <span asp-validation-for="FSApp.Provider" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Details" class="control-label"></label>
+                <input asp-for="FSApp.Details" class="form-control" />
+                <span asp-validation-for="FSApp.Details" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.StartYear" class="control-label"></label>
+                <input asp-for="FSApp.StartYear" class="form-control" />
+                <span asp-validation-for="FSApp.StartYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Mode" class="control-label"></label>
+                <input asp-for="FSApp.Mode" class="form-control" />
+                <span asp-validation-for="FSApp.Mode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Duration" class="control-label"></label>
+                <input asp-for="FSApp.Duration" class="form-control" />
+                <span asp-validation-for="FSApp.Duration" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Cost" class="control-label"></label>
+                <input asp-for="FSApp.Cost" class="form-control" />
+                <span asp-validation-for="FSApp.Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Q1" class="control-label"></label>
+                <input asp-for="FSApp.Q1" class="form-control" />
+                <span asp-validation-for="FSApp.Q1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Q2" class="control-label"></label>
+                <input asp-for="FSApp.Q2" class="form-control" />
+                <span asp-validation-for="FSApp.Q2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Q3" class="control-label"></label>
+                <input asp-for="FSApp.Q3" class="form-control" />
+                <span asp-validation-for="FSApp.Q3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Q4" class="control-label"></label>
+                <input asp-for="FSApp.Q4" class="form-control" />
+                <span asp-validation-for="FSApp.Q4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FSApp.Q5" class="control-label"></label>
+                <input asp-for="FSApp.Q5" class="form-control" />
+                <span asp-validation-for="FSApp.Q5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

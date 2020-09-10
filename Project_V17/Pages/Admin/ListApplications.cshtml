@@ -1,0 +1,132 @@
+﻿@page
+@model Project_V17.Pages.ListApplicationsModel
+
+@{
+    ViewData["Title"] = "ListApplications";
+}
+
+<h2>ListApplications</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].StaffFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].StaffSurname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Function)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Level)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Provider)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Details)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].StartYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FSApp[0].Mode)
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Cost
+            </th>
+            <th>
+                Q1
+            </th>
+            <th>
+                Q2
+            </th>
+            <th>
+                Q3
+            </th>
+            <th>
+                Q4
+            </th>
+            <th>
+                Q5
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FSApp) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffSurname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Function)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Level)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provider)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Details)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Q5)
+            </td>
+            <td>
+                <a asp-page="EditApplication" asp-route-id="@item.AppID">Edit</a> |<a asp-page="Details" asp-route-id="@item.AppID">Print Friendly Summary</a> |<a asp-page="Delete" asp-route-id="@item.AppID">Delete</a>
+
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
