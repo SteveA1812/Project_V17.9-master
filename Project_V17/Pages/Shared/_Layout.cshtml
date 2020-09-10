@@ -39,11 +39,11 @@
                     
 
 
-                    @*@if (_signInManager.IsSignedIn(User))
+                    @if (_signInManager.IsSignedIn(User))
                     {
                         <li><a asp-page="/Admin/Dashboard">Dashboard</a></li>
 
-                    }*@
+                    }
                 </ul>
                 <partial name="_LoginPartial" />
             </div>
