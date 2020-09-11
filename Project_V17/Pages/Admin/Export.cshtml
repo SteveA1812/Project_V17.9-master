@@ -1,0 +1,11 @@
+﻿@page
+@model Project_V17.Pages.Admin.ExportModel
+@{
+    ViewData["Title"] = "Export";
+}
+
+<h2>Export</h2>
+
+<form asp-action="@Url.Action("ExportToExcel","Home"),">
+    <button type="submit">Export to Excel</button>
+</form>
